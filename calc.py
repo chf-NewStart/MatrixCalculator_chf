@@ -1,5 +1,5 @@
 from uti import confirmation, createMatrix, prompt
-from affordancesScript import matrix_insp, matrix_multi
+from affordancesScript import matrix_insp, matrix_multi, matrix_transpose
 
 
 def affordances(some_matrix_in, some_option):
@@ -12,6 +12,11 @@ def affordances(some_matrix_in, some_option):
     elif some_option == "2":
         some_matrix_in2 = createMatrix()
         return matrix_multi(some_matrix_in,some_matrix_in2)
+    
+    elif some_option == "3":
+        return matrix_transpose(some_matrix_in)
+
+
 
 """    
     elif some_option == "2":

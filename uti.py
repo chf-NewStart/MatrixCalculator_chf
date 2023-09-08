@@ -4,7 +4,8 @@ import re
 
 exlaimstr = """what else do you want to do? 
            [1]:-> matrix inspection;
-           [2]:-> matrix multiplication;
+           [2]:-> matrix calculation;
+           [3]:-> matrix manipulation;
            [quit]:-> exit this program"""
 
 

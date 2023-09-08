@@ -60,4 +60,17 @@ def matrix_multi(A,B):
     #else:
         # it's wrong! try another matrix
 
+def matrix_transpose(A):
+    A_shape = A.shape
+    transposedMatrix = np.zeros((A_shape[0],A_shape[-1]))
+
+    for i in range(0,A_shape[0]):
+        for j in range(0,A_shape[-1]):
+            transposedMatrix[i][j] = A[j][i]
     
+    print("\n-----------------matrix_transpose-----------------")
+    print("Matrix A is: \n", A)
+    print("Matrix A transpose is: \n", transposedMatrix)
+    print("-----------------matrix_transpose-----------------\n")
+
+    return 
